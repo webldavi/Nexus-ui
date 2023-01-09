@@ -22,7 +22,7 @@ const inputTypes = ref(["text", "number", "email", "password", "date"]);
 
 const fixedClass = computed({
   get() {
-    return "border transition-all outline-none rounded-lg border-gray-300";
+    return "border transition-all outline-none rounded-lg";
   },
 });
 
@@ -30,9 +30,7 @@ const typeClass = computed({
   get() {
     return [
       {
-        "border-2 pr-2 shadow pl-4 py-1": inputTypes.value.includes(
-          options.type
-        ),
+        "pr-2 shadow pl-4 py-1": inputTypes.value.includes(options.type),
       },
     ];
   },
@@ -41,6 +39,9 @@ const typeClass = computed({
 const optionsClass = computed({
   get() {
     return [
+      {
+        "border-gray-700": !options.variant,
+      },
       {
         "border-red-500":
           options.variant == "error" && inputTypes.value.includes(options.type),
