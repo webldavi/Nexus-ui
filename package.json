@@ -1,6 +1,6 @@
 {
   "name": "@n0d3rr/nexus-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/nexus-components.commom.js",
   "module": "dist/nexus-components.umd.min.js",
   "author": "Luís Daví",
