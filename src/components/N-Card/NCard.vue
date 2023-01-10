@@ -1,5 +1,6 @@
 <template>
   <div
+    @click="emit('card-click')"
     :class="[fixedClass, sizeClass]"
     :style="{ backgroundColor: options.bg, borderColor: options.border }"
   >
@@ -16,8 +17,8 @@
 </template>
 
 <script setup>
-import { computed, defineProps } from "vue";
-
+import { computed, defineProps, defineEmits } from "vue";
+const emit = defineEmits(["card-click"]);
 const options = defineProps({
   bg: {
     type: String,
