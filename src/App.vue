@@ -5,7 +5,12 @@
     <div class="w-full p-2 flex flex-wrap flex flex-row gap-4">
       <div class="w-full flex flex-wrap gap-4">
         <NButton bg="#2dd12d38" text="#378745">Teste</NButton>
-        <NInput type="text" placeholder="teste" variant="" />
+        <NInput
+          type="text"
+          placeholder="teste"
+          variant=""
+          @input-change="test"
+        />
         <NInput type="number" placeholder="teste" variant="" />
         <NInput type="email" placeholder="teste" variant="warn" />
         <NInput type="password" placeholder="teste" variant="error" />
@@ -37,6 +42,9 @@ import NButton from "./components/N-Button/NButton.vue";
 import NNav from "./components/N-Nav/NNav.vue";
 import NInput from "./components/N-Input/NInput.vue";
 import NCard from "./components/N-Card/NCard.vue";
+function test($event) {
+  console.log($event);
+}
 </script>
 
 <style></style>

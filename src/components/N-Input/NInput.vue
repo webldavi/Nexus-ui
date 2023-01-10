@@ -1,9 +1,19 @@
 <template>
-  <input :type="type" :class="[fixedClass, typeClass, optionsClass]" />
+  <input
+    :type="type"
+    v-model="inputValue"
+    :class="[fixedClass, typeClass, optionsClass]"
+  />
 </template>
 
 <script setup>
-import { defineProps, computed, ref } from "vue";
+import { defineProps, computed, ref, defineEmits, watch } from "vue";
+const emit = defineEmits(["input-change"]);
+const inputValue = ref("");
+
+watch(inputValue, () => {
+  emit("input-change", inputValue.value);
+});
 
 const options = defineProps({
   type: {
