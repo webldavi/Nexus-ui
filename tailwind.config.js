@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        105: "25rem",
+        120: "40rem",
+      },
+    },
   },
   plugins: [],
 };

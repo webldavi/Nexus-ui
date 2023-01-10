@@ -33,6 +33,26 @@
           >
         </template>
       </NCard>
+      <div>
+        <NButton @button-click="openModal = true"> Open </NButton>
+      </div>
+      <NModal v-if="openModal" size="md" @close-modal="openModal = false">
+        <template #title>
+          <span class="font-mono font-bold text-xl">TITULO</span>
+        </template>
+
+        <template #body>
+          <div class="w-full h-full flex flex-row items-end justify-end gap-4">
+            <NButton bg="#65ed515c" text="#1c5114">
+              <span class="text-xl">OK</span>
+            </NButton>
+
+            <NButton bg="#ff48485c" text="#5e1c1c">
+              <span class="text-xl">Cancel</span>
+            </NButton>
+          </div>
+        </template>
+      </NModal>
     </div>
   </div>
 </template>
@@ -42,8 +62,13 @@ import NButton from "./components/N-Button/NButton.vue";
 import NNav from "./components/N-Nav/NNav.vue";
 import NInput from "./components/N-Input/NInput.vue";
 import NCard from "./components/N-Card/NCard.vue";
-function test($event) {
-  console.log($event);
+import NModal from "./components/N-Modal/NModal.vue";
+
+import { ref } from "vue";
+const openModal = ref(false);
+
+function test() {
+  console.log("close");
 }
 </script>
 

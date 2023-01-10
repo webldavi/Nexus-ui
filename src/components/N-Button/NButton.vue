@@ -1,7 +1,7 @@
 <template>
   <button
     @click="emit('button-click')"
-    class="transition-all hover:scale-110 p-2 rounded-lg font-mono font-bold hover:shadow-md"
+    class="transition-all w-max h-max hover:scale-110 p-2 rounded-lg font-mono font-bold hover:shadow-md"
     :style="{
       backgroundColor: options.bg,
       color: options.text,

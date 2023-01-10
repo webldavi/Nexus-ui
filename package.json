@@ -1,10 +1,11 @@
 {
   "name": "@n0d3rr/nexus-ui",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "main": "dist/nexus-components.commom.js",
   "module": "dist/nexus-components.umd.min.js",
   "author": "Luís Daví",
-  "description": "##Project Setup ``` npm install ```",
+  "description": "Simple ui lib for vuejs",
+  "keywords": ["Nexus", "Nexus-ui", "UI", "lib", "vue", "tailwind"],
   "files": [
     "dist"
   ],
