@@ -1,5 +1,6 @@
 <template>
   <button
+    @click="emit('button-click')"
     class="transition-all hover:scale-110 p-2 rounded-lg font-mono font-bold hover:shadow-md"
     :style="{
       backgroundColor: options.bg,
@@ -12,7 +13,9 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, defineEmits } from "vue";
+
+const emit = defineEmits(["button-click"]);
 
 const options = defineProps({
   bg: {
