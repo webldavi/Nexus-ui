@@ -57,3 +57,8 @@ Se você quiser contribuir para o Nexus-ui, siga as seguintes etapas:
 ## Licença
 
 O NexusUi está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/webldavi/Nexus-ui/blob/main/LICENSE) para mais detalhes.
+
+
+---
+
+Desenvolvido com 💜 por Luís Daví
