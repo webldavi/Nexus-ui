@@ -53,6 +53,13 @@
           </div>
         </template>
       </NModal>
+
+      <div class="w-96 flex flex-col gap-2">
+        <NProgress percentage="100" color="#4086ff" />
+        <NProgress percentage="75" color="#dab535" />
+        <NProgress percentage="50" color="#ff4e4e" />
+        <NProgress percentage="25" color="#60c951" />
+      </div>
     </div>
   </div>
 </template>
@@ -63,6 +70,7 @@ import NNav from "./components/N-Nav/NNav.vue";
 import NInput from "./components/N-Input/NInput.vue";
 import NCard from "./components/N-Card/NCard.vue";
 import NModal from "./components/N-Modal/NModal.vue";
+import NProgress from "./components/N-Progress/NProgress.vue";
 
 import { ref } from "vue";
 const openModal = ref(false);
