@@ -55,10 +55,16 @@
       </NModal>
 
       <div class="w-96 flex flex-col gap-2">
-        <NProgress percentage="100" color="#4086ff" />
+        <NProgress percentage="100" color="#4086ff" size="sm" />
         <NProgress percentage="75" color="#dab535" />
-        <NProgress percentage="50" color="#ff4e4e" />
+        <NProgress percentage="50" color="#ff4e4e" size="lg" />
         <NProgress percentage="25" color="#60c951" />
+      </div>
+      <div class="w-96 flex flex-col gap-2">
+        <NAlert>This is a alert component</NAlert>
+        <NAlert variant="success">This is a alert component</NAlert>
+        <NAlert variant="warn">This is a alert component</NAlert>
+        <NAlert variant="error">This is a alert component</NAlert>
       </div>
     </div>
   </div>
@@ -71,6 +77,7 @@ import NInput from "./components/N-Input/NInput.vue";
 import NCard from "./components/N-Card/NCard.vue";
 import NModal from "./components/N-Modal/NModal.vue";
 import NProgress from "./components/N-Progress/NProgress.vue";
+import NAlert from "./components/N-Alert/NAlert.vue";
 
 import { ref } from "vue";
 const openModal = ref(false);

@@ -5,6 +5,8 @@ import NInput from "./N-Input/NInput.vue";
 import NCard from "./N-Card/NCard.vue";
 import NModal from "./N-Modal/NModal.vue";
 import NProgress from "./N-Progress/NProgress.vue";
+import NAlert from "./N-Alert/NAlert.vue";
+
 //Export components
 export default {
   NButton,
@@ -13,4 +15,5 @@ export default {
   NCard,
   NModal,
   NProgress,
+  NAlert,
 };
