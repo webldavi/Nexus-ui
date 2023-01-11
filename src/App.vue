@@ -66,6 +66,9 @@
         <NAlert variant="warn">This is a alert component</NAlert>
         <NAlert variant="error">This is a alert component</NAlert>
       </div>
+      <div>
+        <NBadge>BADGE</NBadge>
+      </div>
     </div>
   </div>
 </template>
@@ -78,7 +81,7 @@ import NCard from "./components/N-Card/NCard.vue";
 import NModal from "./components/N-Modal/NModal.vue";
 import NProgress from "./components/N-Progress/NProgress.vue";
 import NAlert from "./components/N-Alert/NAlert.vue";
-
+import NBadge from "./components/N-Badge/NBadge.vue";
 import { ref } from "vue";
 const openModal = ref(false);
 

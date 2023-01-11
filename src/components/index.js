@@ -6,6 +6,7 @@ import NCard from "./N-Card/NCard.vue";
 import NModal from "./N-Modal/NModal.vue";
 import NProgress from "./N-Progress/NProgress.vue";
 import NAlert from "./N-Alert/NAlert.vue";
+import NBadge from "./N-Badge/NBadge.vue";
 
 //Export components
 export default {
@@ -16,4 +17,5 @@ export default {
   NModal,
   NProgress,
   NAlert,
+  NBadge,
 };
