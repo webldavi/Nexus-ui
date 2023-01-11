@@ -4,7 +4,12 @@
 
     <div class="w-full p-2 flex flex-wrap flex flex-row gap-4">
       <div class="w-full flex flex-wrap gap-4">
-        <NButton bg="#2dd12d38" text="#378745">Teste</NButton>
+        <NButton
+          bg="#2dd12d38"
+          text="#378745"
+          @button-click="increment.push({ isOpen: true })"
+          >Teste</NButton
+        >
         <NInput
           type="text"
           placeholder="teste"
@@ -67,7 +72,20 @@
         <NAlert variant="error">This is a alert component</NAlert>
       </div>
       <div>
-        <NBadge>BADGE</NBadge>
+        <NBadge bg="blue"
+          ><p class="text-white font-mono font-bold">WDAWDAWD</p></NBadge
+        >
+      </div>
+      <div class="flex flex-col gap-2 fixed bottom-3 left-3">
+        <NNotify
+          variant="success"
+          :is-open="item.isOpen"
+          @close-notify="increment[index].isOpen = false"
+          v-for="(item, index) in increment"
+          :key="index"
+        >
+          DAWDAW
+        </NNotify>
       </div>
     </div>
   </div>
@@ -82,11 +100,17 @@ import NModal from "./components/N-Modal/NModal.vue";
 import NProgress from "./components/N-Progress/NProgress.vue";
 import NAlert from "./components/N-Alert/NAlert.vue";
 import NBadge from "./components/N-Badge/NBadge.vue";
+import NNotify from "./components/N-Notify/NNotify.vue";
 import { ref } from "vue";
 const openModal = ref(false);
 
+const isNotifyOpen = ref(false);
+
+const increment = ref([]);
 function test() {
   console.log("close");
+  isNotifyOpen.value = false;
+  increment.value = 0;
 }
 </script>
 
