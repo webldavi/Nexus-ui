@@ -84,12 +84,15 @@
           :is-open="item.isOpen"
           @close-notify="increment[index].isOpen = false"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          animi voluptatum perspiciatis, omnis asperiores quaerat aperiam in
-          consectetur vel laborum totam culpa suscipit quis necessitatibus est
-          numquam maiores maxime commodi?
+          this is my notification
         </NNotify>
       </div>
+      <NAccordion
+        :items="[
+          { title: 'teste', text: 'awdadadadadadawawd', isOpen: true },
+          { title: 'TESTE', text: '1234213423421342', isOpen: false },
+        ]"
+      />
     </div>
   </div>
 </template>
@@ -104,6 +107,7 @@ import NProgress from "./components/N-Progress/NProgress.vue";
 import NAlert from "./components/N-Alert/NAlert.vue";
 import NBadge from "./components/N-Badge/NBadge.vue";
 import NNotify from "./components/N-Notify/NNotify.vue";
+import NAccordion from "./components/N-Accordion/NAccordion.vue";
 import { ref } from "vue";
 const openModal = ref(false);
 
