@@ -23,7 +23,7 @@ const options = defineProps({
 
 const fixedClass = computed({
   get() {
-    return "px-3 py-1 rounded-full";
+    return "px-3 py-1 rounded-full flex items-center justify-center";
   },
 });
 </script>

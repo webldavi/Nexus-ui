@@ -72,19 +72,22 @@
         <NAlert variant="error">This is a alert component</NAlert>
       </div>
       <div>
-        <NBadge bg="blue"
+        <NBadge bg="gray"
           ><p class="text-white font-mono font-bold">WDAWDAWD</p></NBadge
         >
       </div>
-      <div class="flex flex-col gap-2 fixed bottom-3 left-3">
+      <div class="flex flex-col gap-2 fixed z-30 top-3 right-3">
         <NNotify
-          variant="success"
+          v-for="(item, index) in increment"
+          v-show="item.isOpen == true"
+          :key="index"
           :is-open="item.isOpen"
           @close-notify="increment[index].isOpen = false"
-          v-for="(item, index) in increment"
-          :key="index"
         >
-          DAWDAW
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          animi voluptatum perspiciatis, omnis asperiores quaerat aperiam in
+          consectetur vel laborum totam culpa suscipit quis necessitatibus est
+          numquam maiores maxime commodi?
         </NNotify>
       </div>
     </div>
