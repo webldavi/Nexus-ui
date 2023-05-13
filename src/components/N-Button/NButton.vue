@@ -13,11 +13,10 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits } from "vue";
 
 const emit = defineEmits(["button-click"]);
 
-interface Options {
+type Options = {
   bg?: string;
   text?: string;
   size?: string;
@@ -32,6 +31,6 @@ const options = withDefaults(defineProps<Options>(), {
 
 <style scoped>
 .button-container {
-  @apply transition-all w-max h-max hover:scale-110 p-2 rounded-lg font-mono font-bold hover:shadow-md;
+  @apply transition-all w-max h-max hover:scale-105 p-2 rounded-lg font-mono font-bold hover:shadow-md;
 }
 </style>

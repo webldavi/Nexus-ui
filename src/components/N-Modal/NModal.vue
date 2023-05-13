@@ -36,11 +36,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, defineEmits } from "vue";
+import { computed } from "vue";
 
 const emit = defineEmits(["close-modal"]);
 
-interface Options {
+type Options ={
   bg?: string;
   modal?: string;
   size?: string;
@@ -72,14 +72,14 @@ const sizeClass = computed<{ modal: Array<Object> }>(() => {
 
 const optionsClass = computed<{ blur: Array<Object> }>(() => {
   return {
-    blur: [{ blur: options.blur }],
+    blur: [{ "backdrop-blur": options.blur }],
   };
 });
 </script>
 
 <style scoped>
 .root {
-  @apply fixed z-20 top-0 left-0 p-6 sm:p-12 w-screen h-screen bg-black/50 flex justify-center items-center;
+  @apply fixed z-20 top-0 left-0 p-6 sm:p-12 w-screen h-screen bg-black/50 flex justify-center items-center overflow-hidden;
 }
 
 .modal {
@@ -90,16 +90,48 @@ const optionsClass = computed<{ blur: Array<Object> }>(() => {
   @apply flex flex-row justify-between border-b border-gray-300;
 }
 
+
+@keyframes full {
+  0%{
+    opacity: 0;
+    @apply w-2 h-2
+  }100%{
+    opacity: 1;
+    @apply w-full h-full
+  }
+}
+@keyframes  md{
+  0%{
+    opacity: 0;
+    @apply w-2 h-2
+  }100%{
+    opacity: 1;
+    @apply w-120 h-105
+  }
+}
+@keyframes sm {
+  0%{
+    opacity: 0;
+    @apply w-2 h-2
+  }100%{
+    opacity: 1;
+    @apply w-96 h-96
+  }
+}
+
 .full {
+  animation: full 0.7s;
   @apply h-full w-full;
 }
 
 .md {
+  animation: md 0.7s;
   @apply h-120 w-105;
 }
 
 .sm {
-  @apply h-96 w-52;
+  animation: sm 0.7s;
+  @apply h-96 w-96;
 }
 
 .blur {

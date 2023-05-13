@@ -17,10 +17,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, defineEmits } from "vue";
+import { computed } from "vue";
 
 const emit = defineEmits(["card-click"]);
-interface Options {
+type Options = {
   bg?: string;
   border?: string;
   size?: string;

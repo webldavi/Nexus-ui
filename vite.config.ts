@@ -7,9 +7,9 @@ import path from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
+      entry: path.resolve(__dirname, "src/index.ts"),
       name: "Nexus",
-      fileName: (format) => `${format}.js`,
+      fileName: (format) => `Nexus.${format}.js`,
     },
     rollupOptions: {
       external: ["vue"],

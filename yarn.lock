@@ -159,6 +159,29 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@n0d3rr/nexus-ui@1.1.33":
+  version "1.1.33"
+  resolved "https://registry.yarnpkg.com/@n0d3rr/nexus-ui/-/nexus-ui-1.1.33.tgz#8cca4d84edf37a459c15952d51d751f9b72a9b54"
+  integrity sha512-lagyIB6o7F4HJBscqzMJCP/TLyow6m0JQQ7++oUJGGekVd2PFP3K1dyj+ipb+ZZoS0zkBDOtywJsLFZAmsnUBw==
+  dependencies:
+    vue "^3.2.47"
+
+"@n0d3rr/nexus-ui@1.1.34":
+  version "1.1.34"
+  resolved "https://registry.yarnpkg.com/@n0d3rr/nexus-ui/-/nexus-ui-1.1.34.tgz#a102b21c4c71fc43fc483856b7d3eefc956a5dd7"
+  integrity sha512-B8s47qcYb9mrOoZ2Ksc8ztZgY4ehqNc5y2icu1dPvzLwcMQnwLbGuFg5aqOVY8kGvLOQNc0H4Mf1wycGdG9Gow==
+  dependencies:
+    "@n0d3rr/nexus-ui" "1.1.33"
+    vue "^3.2.47"
+
+"@n0d3rr/nexus-ui@1.1.35":
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/@n0d3rr/nexus-ui/-/nexus-ui-1.1.35.tgz#8c3cc6549d09f81f5baf634754084399d359fb43"
+  integrity sha512-Ul5Z4ar7FU4PEh+Uo5mECTSN/YchQGk3F270hzWilRUW+vVzPl3sWDpQM8TioW7Upxi94Nn31v/D9edApMsPjQ==
+  dependencies:
+    "@n0d3rr/nexus-ui" "1.1.34"
+    vue "^3.2.47"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"

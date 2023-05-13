@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, computed, ref, defineEmits, watch } from "vue";
+import { computed, ref, watch } from "vue";
 const emit = defineEmits(["input-change"]);
 const inputValue = ref("");
 
@@ -15,7 +15,7 @@ watch(inputValue, () => {
   emit("input-change", inputValue.value);
 });
 
-interface Options {
+type Options ={
   type?: string;
   variant?: string;
 }

@@ -9,7 +9,7 @@ import NAlert from "./N-Alert/NAlert.vue";
 import NBadge from "./N-Badge/NBadge.vue";
 import NNotify from "./N-Notify/NNotify.vue";
 import NAccordion from "./N-Accordion/NAccordion.vue";
-
+import N404 from './N-404/N404.vue';
 //Export all components
 export default [
   {
@@ -52,4 +52,8 @@ export default [
     name: "N-Accordion",
     component: NAccordion,
   },
+  {
+    name: "N-404",
+    component: N404,
+  }
 ];

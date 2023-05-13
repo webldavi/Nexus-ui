@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, computed, defineEmits, ref, onMounted } from "vue";
+import { computed, ref, onMounted } from "vue";
 
 const width = ref(100);
 

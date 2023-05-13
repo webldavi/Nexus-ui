@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-full shadow-lg flex flex-row gap-4 items-center py-2 px-12"
+    class="w-full h-max shadow-lg flex flex-row gap-4 items-center py-2 px-12"
     :style="{
       justifyContent: `${options.justify}`,
     }"
@@ -10,7 +10,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
 
 const options = withDefaults(defineProps<{ justify: string }>(), {
   justify: "flex-start",

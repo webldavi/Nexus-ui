@@ -5,10 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 
-
-interface Options {
+type Options = {
   variant: string;
 }
 
@@ -35,19 +34,16 @@ const variantClass = computed<Array<object>>(() => {
     },
   ];
 });
-
 </script>
-
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'NAlert',
+  name: "NAlert",
   // Other component options
-})
+});
 </script>
-
 
 <style scoped>
 .fixedClass {

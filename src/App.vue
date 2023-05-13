@@ -2,25 +2,40 @@
 import { ref } from "vue";
 
 const myItems = ref([
-  { title: "Item 1", text: "This is the text for item 1", isOpen: false },
-  { title: "Item 2", text: "This is the text for item 2", isOpen: false },
-  { title: "Item 3", text: "This is the text for item 3", isOpen: false },
+    { title: "Item 1", text: "This is the text for item 1", isOpen: false },
+    { title: "Item 2", text: "This is the text for item 2", isOpen: false },
+    { title: "Item 3", text: "This is the text for item 3", isOpen: false },
 ]);
 
-function test(){
-  console.log("Click")
+const modalIsOpen = ref(false);
+function test() {
+    modalIsOpen.value = true;
 }
-
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-row flex-wrap p-8 gap-4" ref="test">
-    <N-Button size="26" bg="#ff0000" @button-click="test">adawddw</N-Button>
-    <N-Alert variant="warn">awdawd</N-Alert>
-    <N-Accordion :items="myItems" bgText="#444"> </N-Accordion>
-    <N-Progress width="100%" percentage="50"/>
-    <N-Notify variant="success" isOpen="">TESTE</N-Notify>
-  </div>
+    <div class="w-full min-h-screen flex flex-row flex-wrap gap-4">
+        <N-Nav class="bg-gray-400 h-16">awd</N-Nav>
+        <div class="w-full h-max flex flex-row flex-wrap gap-12">
+            <N-Modal
+                size="full"
+                v-if="modalIsOpen"
+                @close-modal="modalIsOpen = false"
+            >
+                <template #title> TITULO DO MODAL </template>
+                <template #body> BODY DO MODAL </template>
+            </N-Modal>
+            <N-Button size="26" bg="gray" @button-click="test"
+                >Abrir modal</N-Button
+            >
+            <N-Alert variant="warn">awdawd</N-Alert>
+            <N-Accordion :items="myItems" bgText="#444"> </N-Accordion>
+            <N-Progress width="100%" percentage="50" />
+            <N-Notify variant="success" isOpen="">TESTE</N-Notify>
+            <N-404>Página não encontrada</N-404>
+            <N-Badge bg="#444">awdawdawdawdwad</N-Badge>
+        </div>
+    </div>
 </template>
 
 <style scoped></style>

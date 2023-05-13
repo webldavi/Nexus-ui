@@ -7,9 +7,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 
-interface Options {
+type Options = {
   size: string;
   bg: string;
 }
@@ -26,6 +26,6 @@ const fixedClass = computed<string>(() => {
 
 <style scoped>
 .fixedClass {
-  @apply px-3 py-1 rounded-full flex items-center justify-center;
+  @apply  w-max h-max px-3 py-1 rounded-full flex items-center justify-center;
 }
 </style>

@@ -1,7 +1,16 @@
 {
-  "name": "nexus-ui-reboot",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@n0d3rr/nexus-ui",
+  "version": "1.1.35",
+  "author": "Luís Daví",
+  "description": "Simple ui lib for vuejs",
+  "keywords": [
+    "Nexus",
+    "Nexus-ui",
+    "UI",
+    "lib",
+    "vue",
+    "tailwind"
+  ],
   "type": "module",
   "files": [
     "dist"
@@ -13,7 +22,7 @@
       "import": "./dist/Nexus.es.js",
       "require": "./dist/Nexus.umd.js"
     },
-    "./dist/style.css": "./dist/styles.css"
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
@@ -21,6 +30,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@n0d3rr/nexus-ui": "1.1.35",
     "vue": "^3.2.47"
   },
   "devDependencies": {

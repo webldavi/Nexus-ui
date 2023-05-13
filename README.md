@@ -1,18 +1,64 @@
-# Vue 3 + TypeScript + Vite
+# Nexus-UI
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+NexusUi é uma lib de componentes para criação de interfaces baseada nos estilos do tailwind. Foi desenvolvido usando as seguintes tecnologias: Javascript, Vue, Tailwind e Node.
 
-## Recommended IDE Setup
+## Recursos
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Componentes de interface prontos para uso
+- Estilos baseados no Tailwind
+- Desenvolvido com Javascript, Vue, Tailwind e Node
 
-## Type Support For `.vue` Imports in TS
+## Instalação
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Para instalar o NexusUi, você precisa ter o Node.js e o NPM instalados.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Execute o comando `npm i @n0d3rr/nexus-ui` para instala o Nexus-ui em seu projeto
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Em seu arquivo `main.js` faça a importação do Nexus-ui e seus estilos
+
+```js
+import { createApp } from "vue";
+import "./style.css";
+
+//Importando o Nexus-ui
+import NexusUI from "@n0d3rr/nexus-ui";
+
+//Importando estilos do Nexus-ui
+import "@n0d3rr/nexus-ui/dist/styles.css";
+
+import App from "./App.vue";
+
+//Configurando o vue para usar o Nexus-ui
+createApp(App).use(NexusUI).mount("#app");
+```
+
+## Uso
+
+Para usar o Nexus-ui
+
+Inclua a tag do componente desejado em seu HTML:
+
+```html
+<template>
+  <N-Button> Botão </N-Button>
+</template>
+```
+
+## Contribuição
+
+Se você quiser contribuir para o Nexus-ui, siga as seguintes etapas:
+
+1. Faça um fork do repositório
+2. Crie sua branch com as alterações (`git checkout -b feature/fooBar`)
+3. Commit suas alterações (`git commit -am 'Add some fooBar'`)
+4. Faça o push para a branch (`git push origin feature/fooBar`)
+5. Crie um Pull Request
+
+## Licença
+
+O NexusUi está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/webldavi/Nexus-ui/blob/main/LICENSE) para mais detalhes.
+
+
+---
+
+Desenvolvido com 💜 por Luís Daví
