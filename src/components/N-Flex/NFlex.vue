@@ -6,20 +6,10 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
+import { OptionsNFlex } from "../../types";
 
-type Options = {
-    width: string;
-    height: string;
-    justify: string;
-    align: string;
-    direction: string;
-    gap: string;
-    wrap: string;
-};
 
-const { wrap } = withDefaults(defineProps<Options>(), {
-    wrap: "nowrap",
-});
+const { wrap = "nowrap"} = defineProps<OptionsNFlex>();
 
 const fixedClass = computed<{ root: string }>(() => {
     return {

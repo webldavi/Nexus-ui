@@ -7,21 +7,13 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-
-withDefaults(
-    defineProps<{
-        bg: string;
-        spinner: string;
-        corner: string;
-        size: string;
-    }>(),
-    {
-        bg: "white",
-        spinner: "#1cff42",
-        corner: "#006611",
-        size: "md",
-    }
-);
+import { OptionsNLoading as Options } from "../../types";
+withDefaults(defineProps<Options>(), {
+    bg: "white",
+    spinner: "#1cff42",
+    corner: "#006611",
+    size: "md",
+});
 
 const fixedClass = computed<{ root: string; center: string; corner: string }>(
     () => {

@@ -39,17 +39,8 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-type Options = {
-    items: Array<{
-        title: string;
-        text: string;
-        bg: string;
-        bgText: string;
-        isOpen: boolean;
-    }>;
-    bg: string;
-    bgText: string;
-};
+import { OptionsNAccordion as Options } from "../../types";
+
 const options = withDefaults(defineProps<Options>(), {
     bg: "#272727",
     bgText: "#373636",
@@ -80,21 +71,22 @@ const conditionalClass = computed(() => {
 });
 </script>
 <style scoped>
-
 @keyframes open {
-  0%{
-    @apply h-[1.25rem]
-  }100%{
-    @apply h-max
-  }
+    0% {
+        @apply h-[1.25rem];
+    }
+    100% {
+        @apply h-max;
+    }
 }
 
-@keyframes closed{
-  0%{
-    @apply h-max
-  }100%{
-    @apply h-[1.25rem]
-  }
+@keyframes closed {
+    0% {
+        @apply h-max;
+    }
+    100% {
+        @apply h-[1.25rem];
+    }
 }
 .root {
     @apply w-96 rounded-lg flex flex-col gap-6 p-4 text-white;
@@ -112,12 +104,12 @@ const conditionalClass = computed(() => {
     @apply w-full break-words p-2 rounded-lg;
 }
 
-.opened{
-  animation: open 0.5s;
-  @apply h-max
+.opened {
+    animation: open 0.5s;
+    @apply h-max;
 }
-.closed{
-  animation: closed 0.5s;
-  @apply h-[1.25rem]
+.closed {
+    animation: closed 0.5s;
+    @apply h-[1.25rem];
 }
 </style>

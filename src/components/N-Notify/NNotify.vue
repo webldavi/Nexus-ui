@@ -27,15 +27,13 @@
 
 <script setup lang="ts">
 import { computed, ref, onMounted } from "vue";
+import { OptionsNNotify as Options } from "../../types";
 
 const width = ref(100);
 
-const options = withDefaults(
-    defineProps<{ isOpen?: boolean; variant?: string }>(),
-    {
-        variant: "defualt",
-    }
-);
+const options = withDefaults(defineProps<Options>(), {
+    variant: "defualt",
+});
 
 const emit = defineEmits(["close-notify"]);
 

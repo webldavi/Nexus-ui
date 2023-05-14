@@ -5,12 +5,7 @@
 </template>
 <script setup lang="ts">
 import { computed } from "vue";
-
-type Options = {
-    size: string;
-    bg: string;
-    textColor: string
-};
+import { OptionsNBadge as Options } from "../../types"
 
 withDefaults(defineProps<Options>(), {
     size: "16px",

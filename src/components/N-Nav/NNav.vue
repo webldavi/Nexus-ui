@@ -6,9 +6,12 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-withDefaults(defineProps<{ justify: string }>(), {
+import { OptionsNNav as Options } from "../../types";
+
+withDefaults(defineProps<Options>(), {
     justify: "flex-start",
 });
+
 const fixedClass = computed<{ root: string }>(() => {
     return {
         root: "root",

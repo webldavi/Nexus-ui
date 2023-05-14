@@ -14,13 +14,8 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-
+import { OptionsNCard as Options } from "../../types";
 const emit = defineEmits(["card-click"]);
-type Options = {
-    bg?: string;
-    border?: string;
-    size?: string;
-};
 const options = withDefaults(defineProps<Options>(), {
     bg: "transparent",
     border: "rgb(17, 24, 39)",

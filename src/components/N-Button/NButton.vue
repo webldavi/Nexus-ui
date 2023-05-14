@@ -5,13 +5,8 @@
 </template>
 
 <script setup lang="ts">
+import { OptionsNButton as Options } from "../../types";
 const emit = defineEmits(["button-click"]);
-
-type Options = {
-    bg?: string;
-    text?: string;
-    size?: string;
-};
 
 withDefaults(defineProps<Options>(), {
     bg: "#dbdbdb",

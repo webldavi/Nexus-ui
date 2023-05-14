@@ -6,13 +6,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-
-type Options = {
-    size?: string;
-    percentage: string;
-    width?: string;
-    color?: string;
-};
+import { OptionsNProgress as Options } from "../../types";
 
 const options = withDefaults(defineProps<Options>(), {
     size: "md",
