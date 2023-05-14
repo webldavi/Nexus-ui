@@ -10,6 +10,9 @@ import NBadge from "./N-Badge/NBadge.vue";
 import NNotify from "./N-Notify/NNotify.vue";
 import NAccordion from "./N-Accordion/NAccordion.vue";
 import N404 from './N-404/N404.vue';
+import NLoading from "./N-Loading/NLoading.vue";
+
+
 //Export all components
 export default [
   {
@@ -55,5 +58,9 @@ export default [
   {
     name: "N-404",
     component: N404,
+  },
+  {
+    name: "N-Loading",
+    component: NLoading,
   }
 ];
