@@ -48,14 +48,12 @@ const options = withDefaults(defineProps<Options>(), {
 
 const itemsCache = ref(options.items);
 
-interface fixed {
+const fixedClass = computed<{
     root: string;
     container: string;
     divider: string;
     textDesc: string;
-}
-
-const fixedClass = computed<fixed>(() => {
+}>(() => {
     return {
         root: "root",
         container: "container",

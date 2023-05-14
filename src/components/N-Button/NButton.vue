@@ -1,17 +1,24 @@
 <template>
-    <button @click="emit('button-click')" class="button-container">
+    <button @click="emit('button-click')" :class="fixedClass">
         <slot />
     </button>
 </template>
 
 <script setup lang="ts">
-import { OptionsNButton as Options } from "../../types";
+import {
+    OptionsNButton as Options,
+} from "../../types";
+import { computed } from "vue";
 const emit = defineEmits(["button-click"]);
 
 withDefaults(defineProps<Options>(), {
     bg: "#dbdbdb",
     text: "#444",
     size: "12",
+});
+
+const fixedClass = computed<string>(() => {
+    return "button-container";
 });
 </script>
 

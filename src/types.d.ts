@@ -88,3 +88,4 @@ export type OptionsNAccordion = {
     bg: string;
     bgText: string;
 };
+
