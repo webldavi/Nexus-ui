@@ -1,31 +1,30 @@
 <template>
-  <div
-    :class="[fixedClass]"
-    :style="{ backgroundColor: options.bg, fontSize: options.size }"
-  >
-    <slot />
-  </div>
+    <div :class="[fixedClass]">
+        <slot />
+    </div>
 </template>
 <script setup lang="ts">
 import { computed } from "vue";
 
 type Options = {
-  size: string;
-  bg: string;
-}
+    size: string;
+    bg: string;
+};
 
-const options = withDefaults(defineProps<Options>(), {
-  size: "16px",
-  bg: "#e0e0",
+withDefaults(defineProps<Options>(), {
+    size: "16px",
+    bg: "#e0e0",
 });
 
 const fixedClass = computed<string>(() => {
-  return "fixedClass";
+    return "fixedClass";
 });
 </script>
 
 <style scoped>
 .fixedClass {
-  @apply  w-max h-max px-3 py-1 rounded-full flex items-center justify-center;
+    background-color: v-bind(bg);
+    font-size: v-bind(size);
+    @apply w-max h-max px-3 py-1 rounded-full flex items-center justify-center;
 }
 </style>
