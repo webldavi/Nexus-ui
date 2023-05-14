@@ -1,6 +1,6 @@
 {
   "name": "@n0d3rr/nexus-ui",
-  "version": "1.1.36",
+  "version": "1.1.37",
   "author": "Luís Daví",
   "description": "Simple ui lib for vuejs",
   "keywords": [
@@ -30,7 +30,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@n0d3rr/nexus-ui": "1.1.36",
     "vue": "^3.2.47"
   },
   "devDependencies": {

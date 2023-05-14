@@ -8,18 +8,11 @@
 import { computed } from "vue";
 import { OptionsNFlex } from "../../types";
 
-
-const { wrap = "nowrap"} = defineProps<OptionsNFlex>();
+const { wrap = "nowrap" } = defineProps<OptionsNFlex>();
 
 const fixedClass = computed<{ root: string }>(() => {
     return {
         root: "root",
-    };
-});
-
-const conditionalWrap = computed<{ wrap: string }>(() => {
-    return {
-        wrap: wrap == "wrap" ? "wrap" : "nowrap",
     };
 });
 </script>
@@ -33,6 +26,6 @@ const conditionalWrap = computed<{ wrap: string }>(() => {
     align-items: v-bind(align);
     flex-direction: v-bind(direction);
     gap: v-bind(gap);
-    flex-wrap: v-bind("conditionalWrap.wrap");
+    flex-wrap: v-bind(wrap);
 }
 </style>
