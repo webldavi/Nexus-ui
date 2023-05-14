@@ -14,13 +14,22 @@ type Options = {
     align: string;
     direction: string;
     gap: string;
+    wrap: string;
 };
 
-defineProps<Options>();
+const { wrap } = withDefaults(defineProps<Options>(), {
+    wrap: "nowrap",
+});
 
 const fixedClass = computed<{ root: string }>(() => {
     return {
         root: "root",
+    };
+});
+
+const conditionalWrap = computed<{ wrap: string }>(() => {
+    return {
+        wrap: wrap == "wrap" ? "wrap" : "nowrap",
     };
 });
 </script>
@@ -34,5 +43,6 @@ const fixedClass = computed<{ root: string }>(() => {
     align-items: v-bind(align);
     flex-direction: v-bind(direction);
     gap: v-bind(gap);
+    flex-wrap: v-bind("conditionalWrap.wrap");
 }
 </style>
