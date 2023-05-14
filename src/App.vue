@@ -35,6 +35,27 @@ function test() {
             <N-404>Página não encontrada</N-404>
             <N-Badge bg="#444">awdawdawdawdwad</N-Badge>
             <N-Loading size="50px"/>
+            <N-Flex direction="column" gap="2px" justify="center" align="center" width="100%" height="100%">
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+                <span>AAAA</span>
+            </N-Flex>
         </div>
     </div>
 </template>

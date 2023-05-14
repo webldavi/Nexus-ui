@@ -11,7 +11,7 @@ import NNotify from "./N-Notify/NNotify.vue";
 import NAccordion from "./N-Accordion/NAccordion.vue";
 import N404 from "./N-404/N404.vue";
 import NLoading from "./N-Loading/NLoading.vue";
-
+import NFlex from "./N-Flex/NFlex.vue";
 //Export all components
 export default [
     {
@@ -61,5 +61,9 @@ export default [
     {
         name: "N-Loading",
         component: NLoading,
+    },
+    {
+        name: "N-Flex",
+        component: NFlex,
     },
 ];
