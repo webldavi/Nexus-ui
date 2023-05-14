@@ -34,7 +34,7 @@ function test() {
             <N-Notify variant="success" isOpen="">TESTE</N-Notify>
             <N-404>Página não encontrada</N-404>
             <N-Badge bg="#444">awdawdawdawdwad</N-Badge>
-            <N-Loading></N-Loading>
+            <N-Loading size="50px"/>
         </div>
     </div>
 </template>
