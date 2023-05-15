@@ -12,6 +12,7 @@ const options = withDefaults(defineProps<Options>(), {
     size: "md",
     width: "100%",
     color: "blue",
+    percentage: '10'
 });
 
 const fixedClass = computed<{ root: string; percentage: string }>(() => {
@@ -20,6 +21,10 @@ const fixedClass = computed<{ root: string; percentage: string }>(() => {
         percentage: "percentage",
     };
 });
+
+const percentageClass = computed<string>(()=>{
+    return `${options.percentage}%`
+})
 
 const sizeClass = computed<Array<Object>>(() => {
     return [
@@ -39,7 +44,7 @@ const sizeClass = computed<Array<Object>>(() => {
 }
 .percentage {
     background-color: v-bind(color);
-    width: v-bind(width);
+    width: v-bind(percentageClass);
     @apply absolute z-10 left-0 h-full rounded-full;
 }
 .lg {
