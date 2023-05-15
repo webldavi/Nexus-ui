@@ -89,7 +89,16 @@ export type OptionsNAccordion = {
     bgText: string;
 };
 
+//NCheckbox.vue
 export type OptionsNCheckbox = {
     color: string;
     unClickColor: string;
+};
+
+//NBox.vue
+export type OptionsNBox = {
+    height: string;
+    width: string;
+    bg: string;
+    text: string;
 };

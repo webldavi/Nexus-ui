@@ -11,9 +11,6 @@ const modalIsOpen = ref(false);
 function test() {
     modalIsOpen.value = true;
 }
-function teste(value: string) {
-    console.log("Teste", value);
-}
 </script>
 
 <template>
@@ -61,12 +58,9 @@ function teste(value: string) {
                 <span class="w-max">AAAA</span>
                 <span class="w-max">AAAA</span>
             </N-Flex>
-            <N-Checkbox
-                color="#34eb4c"
-                unClickColor="black"
-                @checked="($event: string) => teste($event)"
-            />
-            <N-Switch @checked="($event: string) => teste($event)" />
+            <N-Checkbox color="#34eb4c" unClickColor="black" />
+            <N-Switch />
+            <N-Box>awdawd</N-Box>
         </div>
     </div>
 </template>

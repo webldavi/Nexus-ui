@@ -53,7 +53,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const checked = ref(true);
+const checked = ref(false);
 const emit = defineEmits(['checked']);
 function updateChecked() {
     checked.value = !checked.value;
