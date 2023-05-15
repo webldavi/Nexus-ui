@@ -51,7 +51,7 @@
     </label>
 </template>
 <script setup lang="ts">
-import { ref, defineEmits } from "vue";
+import { ref } from "vue";
 
 const checked = ref(true);
 const emit = defineEmits(['checked']);

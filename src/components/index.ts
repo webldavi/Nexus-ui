@@ -13,4 +13,6 @@ let categories: Array<object> = [];
     }
 );
 
+console.log(categories)
+
 export default categories;

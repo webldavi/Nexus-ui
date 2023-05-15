@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, defineEmits } from "vue";
+import { computed, ref } from "vue";
 import { OptionsNCheckbox as Options } from "../../../types";
 
 const emit = defineEmits(["checked"]);
