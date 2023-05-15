@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import { computed, ref, onMounted } from "vue";
-import { OptionsNNotify as Options } from "../../types";
+import { OptionsNNotify as Options } from "../../../types";
 
 const width = ref(100);
 

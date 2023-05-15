@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import {
     OptionsNButton as Options,
-} from "../../types";
+} from "../../../types";
 import { computed } from "vue";
 const emit = defineEmits(["button-click"]);
 

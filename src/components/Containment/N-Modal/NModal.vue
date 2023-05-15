@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { OptionsNModal as Options } from "../../types";
+import { OptionsNModal as Options } from "../../../types";
 
 const emit = defineEmits(["close-modal"]);
 

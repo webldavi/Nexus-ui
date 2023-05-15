@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { OptionsNFlex } from "../../types";
+import { OptionsNFlex } from "../../../types";
 
 const { wrap = "nowrap" } = defineProps<OptionsNFlex>();
 

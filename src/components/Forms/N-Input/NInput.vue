@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 import { computed, ref, watch } from "vue";
-import { OptionsNInput as Options } from "../../types";
+import { OptionsNInput as Options } from "../../../types";
 
 const emit = defineEmits(["input-change"]);
 const inputValue = ref("");

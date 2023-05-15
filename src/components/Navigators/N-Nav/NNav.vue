@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { OptionsNNav as Options } from "../../types";
+import { OptionsNNav as Options } from "../../../types";
 
 withDefaults(defineProps<Options>(), {
     justify: "flex-start",

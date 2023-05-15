@@ -39,7 +39,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { OptionsNAccordion as Options } from "../../types";
+import { OptionsNAccordion as Options } from "../../../types";
 
 const options = withDefaults(defineProps<Options>(), {
     bg: "#272727",

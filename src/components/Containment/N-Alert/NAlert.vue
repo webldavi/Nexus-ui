@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { OptionsNAlert as Options } from "../../types";
+import { OptionsNAlert as Options } from "../../../types";
 
 const options = withDefaults(defineProps<Options>(), {
     variant: "default",

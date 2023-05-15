@@ -5,7 +5,7 @@
             <slot />
         </p>
         <div :class="fixedClass.imgContainer">
-            <img src="../../assets/404.png" :class="fixedClass.img" alt="" />
+            <img src="../../../assets/404.png" :class="fixedClass.img" alt="" />
         </div>
     </div>
 </template>

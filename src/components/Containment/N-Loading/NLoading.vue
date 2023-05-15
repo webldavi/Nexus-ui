@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { OptionsNLoading as Options } from "../../types";
+import { OptionsNLoading as Options } from "../../../types";
 withDefaults(defineProps<Options>(), {
     bg: "white",
     spinner: "#1cff42",
