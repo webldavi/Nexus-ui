@@ -36,33 +36,28 @@ function test() {
             <N-Badge bg="#444">awdawdawdawdwad</N-Badge>
             <N-Loading size="100px" />
             <N-Flex
-                direction="column"
+                direction="row"
                 gap="2px"
                 justify="center"
                 align="center"
                 width="100%"
                 height="100%"
+                wrap="wrap"
             >
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
-                <span>AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
+                <span class="w-max">AAAA</span>
             </N-Flex>
+            <N-Checkbox color="#34eb4c" unClickColor="black"/>
         </div>
     </div>
 </template>

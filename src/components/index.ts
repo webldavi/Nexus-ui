@@ -7,8 +7,8 @@ import Navigators from "./Navigators";
 let categories: Array<object> = [];
 [Containment, Forms, GridAndFlex, Navigators].forEach(
     (category: Array<object>) => {
-        category.forEach((c) => {
-            categories.push(c);
+        category.forEach((components: Object) => {
+            categories.push(components);
         });
     }
 );

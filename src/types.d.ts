@@ -89,3 +89,7 @@ export type OptionsNAccordion = {
     bgText: string;
 };
 
+export type OptionsNCheckbox = {
+    color: string;
+    unClickColor: string;
+};
