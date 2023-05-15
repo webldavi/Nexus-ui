@@ -102,3 +102,12 @@ export type OptionsNBox = {
     bg: string;
     text: string;
 };
+
+//NCode.vue
+export type OptionsNCode = {
+    theme: string;
+    lang: string;
+    editor: boolean;
+    height: string;
+    width: string;
+};

@@ -61,6 +61,7 @@ function test() {
             <N-Checkbox color="#34eb4c" unClickColor="black" />
             <N-Switch />
             <N-Box>awdawd</N-Box>
+            <N-Code lang="js" theme="github-dark" editor width="500px" height="500px">const teste = dwdwdw</N-Code>
         </div>
     </div>
 </template>
