@@ -16,11 +16,14 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, defineEmits } from "vue";
 import { OptionsNCheckbox as Options } from "../../../types";
+
+const emit = defineEmits(["checked"]);
+
 const options = withDefaults(defineProps<Options>(), {
     color: "blue",
-    unClickColor: "black"
+    unClickColor: "black",
 });
 
 const historyColor = ref(options.color);
@@ -28,6 +31,7 @@ const check = ref(false);
 function updateCheckbox() {
     check.value = !check.value;
     historyColor.value = check.value ? options.color : options.unClickColor;
+    emit("checked", check.value);
 }
 
 const fixedClass = computed<string>(() => {
