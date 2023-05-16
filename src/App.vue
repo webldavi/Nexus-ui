@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const myItems = ref([
-    { title: "Item 1", text: "This is the text for item 1", isOpen: false },
-    { title: "Item 2", text: "This is the text for item 2", isOpen: false },
-    { title: "Item 3", text: "This is the text for item 3", isOpen: false },
-]);
-
 const modalIsOpen = ref(false);
 function test() {
     modalIsOpen.value = true;
@@ -25,14 +19,36 @@ function test() {
                 <template #title> TITULO DO MODAL </template>
                 <template #body> BODY DO MODAL </template>
             </N-Modal>
+
             <N-Button size="26" bg="gray" @button-click="test"
                 >Abrir modal</N-Button
             >
+
             <N-Input />
+
             <N-Alert variant="warn">awdawd</N-Alert>
-            <N-Accordion :items="myItems" bgText="#444"> </N-Accordion>
+
+            <N-Accordion height="46rem">
+                <N-Accordion-item>
+                    <template #title> ITEM 1 </template>
+                    <template #body>
+                        AWDAWDAWDWawdawd awd awd adaw da wd
+                        awdwadadawdawdawdawdwad awdaw
+                        dawdawdawdawdawdawdadawdawdaw dawdawd
+                    </template>
+                </N-Accordion-item>
+                <N-Accordion-item>
+                    <template #title> ITEM 1 </template>
+                    <template #body>
+                        AWDAWDAWDWawdawd awd awd adaw da wd
+                        awdwadadawdawdawdawdwad awdaw
+                        dawdawdawdawdawdawdadawdawdaw dawdawd
+                    </template>
+                </N-Accordion-item>
+            </N-Accordion>
+
             <N-Progress width="100%" percentage="50" />
-            <N-Notify variant="success" isOpen="">TESTE</N-Notify>
+            <N-Notify variant="success" isOpen="false">TESTE</N-Notify>
             <N-404>Página não encontrada</N-404>
             <N-Badge bg="#444">awdawdawdawdwad</N-Badge>
             <N-Loading size="100px" />
@@ -61,7 +77,9 @@ function test() {
             <N-Checkbox color="#34eb4c" unClickColor="black" />
             <N-Switch />
             <N-Box>awdawd</N-Box>
-            <N-Code lang="js" theme="github-dark" editor width="500px" height="500px">const teste = dwdwdw</N-Code>
+            <N-Code lang="js" theme="dracula" :editor="false"
+                >const teste = 'teste'</N-Code
+            >
         </div>
     </div>
 </template>
