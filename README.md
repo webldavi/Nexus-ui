@@ -2,7 +2,7 @@
 
 <img src="https://github.com/webldavi/Nexus-ui/blob/reboot/nexus.png?raw=true" align="start"/>
 
->NexusUi é uma lib de componentes para criação de interfaces baseada nos estilos do tailwind. <br/> Foi desenvolvido usando as seguintes tecnologias: Javascript, Vue, Tailwind e Node.
+>NexusUi é uma lib de componentes para criação de interfaces baseada nos estilos do tailwind. <br/> Foi desenvolvido usando as seguintes tecnologias: Javascript, Vite, Vue, Tailwind e Node.
 
 ## 🧩 Recursos
 
