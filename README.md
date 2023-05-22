@@ -1,14 +1,16 @@
-# Nexus-UI
+<h1 align="center">Nexus-UI</h1>
 
-NexusUi é uma lib de componentes para criação de interfaces baseada nos estilos do tailwind. Foi desenvolvido usando as seguintes tecnologias: Javascript, Vue, Tailwind e Node.
+<img src="https://github.com/webldavi/Nexus-ui/blob/reboot/nexus.png?raw=true" align="start"/>
 
-## Recursos
+>NexusUi é uma lib de componentes para criação de interfaces baseada nos estilos do tailwind. <br/> Foi desenvolvido usando as seguintes tecnologias: Javascript, Vue, Tailwind e Node.
+
+## 🧩 Recursos
 
 - Componentes de interface prontos para uso
 - Estilos baseados no Tailwind
 - Desenvolvido com Javascript, Vue, Tailwind e Node
 
-## Instalação
+## 🚀 Instalando
 
 Para instalar o NexusUi, você precisa ter o Node.js e o NPM instalados.
 
@@ -32,7 +34,7 @@ import App from "./App.vue";
 createApp(App).use(NexusUI).mount("#app");
 ```
 
-## Uso
+## 👨‍💻 Uso
 
 Para usar o Nexus-ui
 
@@ -44,7 +46,7 @@ Inclua a tag do componente desejado em seu HTML:
 </template>
 ```
 
-## Contribuição
+## 📫 Contribuindo para [Nexus-UI](https://github.com/webldavi/Nexus-ui)
 
 Se você quiser contribuir para o Nexus-ui, siga as seguintes etapas:
 
@@ -54,10 +56,27 @@ Se você quiser contribuir para o Nexus-ui, siga as seguintes etapas:
 4. Faça o push para a branch (`git push origin feature/fooBar`)
 5. Crie um Pull Request
 
-## Licença
+## 🤝 Colaboradores
 
-O NexusUi está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/webldavi/Nexus-ui/blob/main/LICENSE) para mais detalhes.
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/webldavi">
+        <img src="https://webldavi.vercel.app/assets/photo-c05c96c4.jpg" width="100px;" alt="Foto de Luís daví no "/><br>
+        <sub>
+          <b>Luís Daví</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 📝 Licença
+
+
+Esse projeto está sob licença. Veja o arquivo [LICENSE.md](https://github.com/webldavi/Nexus-ui/blob/main/LICENSE) para mais detalhes.
 
 ---
 
