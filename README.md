@@ -52,7 +52,7 @@ Se você quiser contribuir para o Nexus-ui, siga as seguintes etapas:
 
 1. Faça um fork do repositório
 2. Crie sua branch com as alterações (`git checkout -b feature/fooBar`)
-3. Commit suas alterações (`git commit -am 'Add some fooBar'`)
+3. Commit suas alterações (`git commit -m 'Add some fooBar'`)
 4. Faça o push para a branch (`git push origin feature/fooBar`)
 5. Crie um Pull Request
 
