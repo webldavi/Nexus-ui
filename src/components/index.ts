@@ -1,5 +1,5 @@
 //Import all categories
-import Containment from "./Containment";
+import Containment from "./Content";
 import Forms from "./Forms";
 import GridAndFlex from "./Grid_and_Flex";
 import Navigators from "./Navigators";
